@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("inprocess_store", "for inprocess_store support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("inprocess_store", "enable inprocess_store support", "no");
+
+if (PHP_INPROCESS_STORE != "no") {
+	EXTENSION("inprocess_store", "inprocess_store.c");
+}
+
